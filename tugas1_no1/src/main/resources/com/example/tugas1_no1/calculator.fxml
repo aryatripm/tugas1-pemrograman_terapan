@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tugas1_no1.CalculatorController">
+    <children>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label text="Bilangan 1 :" />
+                <TextField fx:id="bilanganSatu" />
+                <Label layoutX="223.0" layoutY="176.0" text="Bilangan 2 :" />
+                <TextField fx:id="bilanganDua" />
+                <Label layoutX="223.0" layoutY="210.0" text="Hasil :" />
+                <TextField fx:id="hasil" editable="false" layoutX="10.0" layoutY="228.0" />
+                <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                        <Button fx:id="tambah" minWidth="0.0" mnemonicParsing="false" onAction="#tambah" prefHeight="26.0" text="+" textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="kurang" layoutX="357.0" layoutY="17.0" minWidth="0.0" mnemonicParsing="false" onAction="#kurang" prefHeight="26.0" text="-" textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="kali" layoutX="358.0" layoutY="17.0" minWidth="0.0" mnemonicParsing="false" onAction="#kali" prefHeight="26.0" text="*" textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="bagi" layoutX="358.0" layoutY="17.0" minWidth="0.0" mnemonicParsing="false" onAction="#bagi" prefHeight="26.0" text="/" textAlignment="CENTER" wrapText="true" />
+                    </buttons>
+                </ButtonBar>
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
